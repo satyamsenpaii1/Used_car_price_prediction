@@ -2,7 +2,7 @@
 
 An end-to-end machine learning project that predicts the market price of a used car from its specifications, deployed as a live web app.
 
-**🔗 Live demo:** [usedcarpricepredictionsatyam.streamlit.app]([https://your-app-name.streamlit.app](https://usedcarpricepredictionsatyam.streamlit.app/))
+**🔗 Live demo:** [usedcarpricepredictionsatyam.streamlit.app](https://usedcarpricepredictionsatyam.streamlit.app/)
 
 ![App screenshot](screenshots/app.png)
 
