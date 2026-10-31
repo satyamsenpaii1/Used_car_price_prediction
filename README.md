@@ -99,7 +99,7 @@ I ran `GridSearchCV` over **90 combinations** (3-fold CV, scored on MAE):
 │   ├── model_columns.pkl      # the 72 feature columns
 │   └── model_mean_prices.pkl  # target-encoding lookup
 ├── screenshots/
-├── car_price_analysis.ipynb   # full analysis and training
+├── notebook.ipynb   # full analysis and training
 ├── used_cars.csv              # dataset
 ├── requirements.txt
 └── README.md
@@ -108,15 +108,8 @@ I ran `GridSearchCV` over **90 combinations** (3-fold CV, scored on MAE):
 ## Run Locally
 
 ```bash
-git clone https://github.com/<your-username>/used-car-price-prediction.git
-cd used-car-price-prediction
+git clone https://github.com/satyamsenpaii1/Used_car_price_prediction.git
+cd Used_car_price_prediction
 pip install -r requirements.txt
 streamlit run model/app.py
 ```
-
----
-
-## Limitations and Next Steps
-- **Target encoding leakage:** the average price per model was computed on the full dataset before the train-test split, so the reported scores are optimistic. A cleaner version would compute it on the training set only (or inside a Pipeline with cross-validation).
-- The dataset is small (~4,000 rows), and trim level, condition and location are not captured, so predictions are estimates, not appraisals.
-- Next steps: fix the encoding leakage, compare against Gradient Boosting or XGBoost, and add prediction intervals.
